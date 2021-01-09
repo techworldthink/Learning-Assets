@@ -1,0 +1,7 @@
+ARDUINO		ESP8266
+
+3.3v		3.3v
+GND		GND
+RX		TX
+TX		RX
+3.3v		EN

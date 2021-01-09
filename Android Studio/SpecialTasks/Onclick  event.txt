@@ -1,0 +1,13 @@
+
+activity main class
+
+......................
+
+public void LoginClick(View view){
+    Intent intent= new Intent(MainActivity.this,Second_Activity.class);
+    startActivity(intent);
+
+xml file
+.....................................
+<Button
+ android:onClick="LoginClick"

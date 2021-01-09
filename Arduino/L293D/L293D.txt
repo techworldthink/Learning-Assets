@@ -1,0 +1,19 @@
+Total number of pins = 16
+Ic Operating voltage = 5 – 7 v
+Input voltage = 4.5 – 36 v
+Output voltage = 4.5 – 36 v
+
+
+1,2EN: To activate the channel 1 we supply +5v to this pin.
+3,4EN: To activate the channel 2 we supply +5v to this pin.
+Vcc1: Input voltage to derive the internal circuit (darligton array) = 4.5 to 5 v
+Vcc2: Supply/Output to appear at output = 4.5 to 36 v 
+1A: Channel-1 Input Pin
+2A: Channel-1 Input Pin
+1Y: Channel-1 Output Pin
+2Y: Channel-1 Output Pin
+3A: Channel-2 Input Pin
+4A: Channel-2 Input Pin
+3Y: Channel-2 Output Pin
+4Y: Channel-2 Output Pin
+

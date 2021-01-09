@@ -1,0 +1,20 @@
+String tableName = "Cricket";
+            String db_name = "sports_register";
+
+            String tableString = String.format("Table %s:\n", tableName);
+            SQLiteDatabase records = openOrCreateDatabase(db_name, MODE_PRIVATE, null);
+
+            Cursor allRows  = records.rawQuery("SELECT * FROM " + tableName, null);
+            if (allRows.moveToFirst() ){
+                String[] columnNames = allRows.getColumnNames();
+                do {
+                    for (String name: columnNames) {
+                        tableString += String.format("%s: %s\n", name,
+                                allRows.getString(allRows.getColumnIndex(name)));
+                    }
+                    tableString += "\n";
+
+                } while (allRows.moveToNext());
+            }
+            //Toast.makeText(view_database.this,tableString,Toast.LENGTH_SHORT).show();
+            List.setText(tableString);

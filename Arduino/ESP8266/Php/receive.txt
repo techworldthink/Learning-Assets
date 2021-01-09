@@ -1,0 +1,7 @@
+<?php
+$dbcon=mysqli_connect("localhost","root","","esp");
+ $id=1;
+ $received=$_GET['sended'];
+  mysqli_query($dbcon,"update data_table set received='$received' where id='$id'")
+?>
+

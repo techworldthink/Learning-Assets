@@ -1,0 +1,13 @@
+public void handleclick(View view){
+switch(view.getId())
+{
+ case R.id.b1:
+	showMessage("clicked");
+	break;
+}
+}
+
+public void showMessage(String message){
+Toast.makeText(this,message,Toast.LENGTH_SHORT).sho();
+
+}

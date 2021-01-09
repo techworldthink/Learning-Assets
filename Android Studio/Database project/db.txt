@@ -1,0 +1,34 @@
+  String db_name = "sports_register";
+   SQLiteDatabase records = openOrCreateDatabase(db_name, MODE_PRIVATE, null);
+records.execSQL("CREATE TABLE IF NOT EXISTS Cricket(Date VARCHAR);");
+            Cursor test = records.rawQuery("Select count(*) from Cricket",null);
+            test.moveToLast();
+            int count=test.getInt(0);
+
+            if(count == 0) {
+                ContentValues values_dummy = new ContentValues();
+                values_dummy.put("Date", "0");
+                records.insert("Cricket", null, values_dummy);
+            }
+
+            Cursor resultSet = records.rawQuery("Select * from Cricket",null);
+            resultSet.moveToLast();
+            String Date = resultSet.getString(0);
+if(Date.equals(formattedDate))
+            {
+               // Toast.makeText(MainActivity.this,"Already",Toast.LENGTH_SHORT).show();
+                textView3.setText("ADDED");
+            }
+            else
+            {
+                ContentValues values = new ContentValues();
+                values.put("Date",formattedDate);
+                records.insert("Cricket", null, values);
+
+                Cursor resultSet2 = records.rawQuery("Select * from Cricket",null);
+                resultSet2.moveToLast();
+                String Date_get = resultSet2.getString(0);
+
+                //Toast.makeText(MainActivity.this,Date_get,Toast.LENGTH_SHORT).show();
+                textView3.setText("NOT ADDED");
+            }

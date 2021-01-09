@@ -1,0 +1,9 @@
+<?php
+$dbcon=mysqli_connect("localhost","root","","esp");
+$id=1;
+$retrieved= mysqli_query($dbcon,"select * from data_table where id='$id'");
+$num= mysqli_fetch_row($retrieved);
+
+
+ echo "$num[1]";
+?>

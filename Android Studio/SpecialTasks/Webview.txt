@@ -1,0 +1,19 @@
+activity class
+................................
+
+
+inside onCreate
+
+WebView myWebView = (WebView) findViewById(R.id.webview);
+myWebView.loadUrl("https://techworldthink.github.io/Dreams-destinations/");
+
+
+inside secondactivity xml file
+
+  <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
