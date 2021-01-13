@@ -1,0 +1,187 @@
+install
+................................
+install node
+
+npx create-react-app todoapp                     //  new project with internet connection
+npm install -g create-react-app                  // offline install
+npx create-react-app todoapp                      // offline new project 
+
+
+
+to run
+..............................
+terminal
+npm start
+
+need to install some plugins
+.......................................
+
+prettier // formatter  // shift+alt+f
+simple react snippets   // autofill
+
+
+
+errors and warnings
+..................................
+clear all errors ad warnings early
+
+
+
+use state   in class
+................................................................................////////////////
+
+
+App.js   
+........
+
+import React, { Component } from "react";
+import "./App.css";
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">             // parent div   // only one is used 
+        <h1>hai</h1>
+      </div>
+    );
+  }
+}
+export default App;
+
+
+.......................
+state only can used inside class  .. not can inside div or any other tags
+
+/*     variable declaration      */
+
+state={
+mystring:"helo",
+number:10
+};
+
+/*   how access    */
+
+<h1>{this.state.mystring}</h1>
+
+
+go to source folder
+create a folder named component
+create a file named todo.js
+type rccp  then pres enter  // autofill
+use h1 write something
+go to app.js
+
+import  todo from "./component/Todo";
+
+
+use inside paret div
+..................
+
+<Todo/>
+
+
+Concept of propes
+..............................................................................................
+for use state in other files
+it is a variable
+
+<Todo give _a_name={}/>
+
+goto todo.js file  
+
+<h2>{this.props.give _a_name}</h2>
+
+how change state value
+..................................
+handlechange=()=>{
+this.setState({
+mystringone:"changed text"
+})
+}
+
+
+<button onClick={this.handleChange}change test</button>
+
+......................................................................................................
+
+to change state    use setstate
+cant change props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

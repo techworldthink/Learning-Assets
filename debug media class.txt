@@ -1,0 +1,264 @@
+     document.getElementById('header').style.display = "none";
+     //document.getElementById('header').innerHTML = ("hacked")
+     // document.getElementsByClassName('header')[0].innerHTML = ("cracked")
+     //document.getElementsByTagName('h1')[0].innerHTML = ("tag")
+
+
+<!---<h1 class="header">hai</h1> --->
+
+
+
+
+METHODS
+.........................................
+
+a.length              // for array and string
+a.indexOf('m')        // position of letter m in   // check something to the database //user check
+a.lastIndexOf('m')    // check from last index 
+a. search('hi')       //
+a.inlcude('hi')       // check tru or false 
+
+
+typeOf(a)
+parseInt(a)        // convert to integer
+a.toString()       // convert to string
+let array=[];
+
+
+variable declaration
+............................................
+
+var name;                   // var name possible
+let name;
+const name=value;
+
+
+
+array
+....................................
+
+array.push('a');    // last  add
+array.pop();        // last remove
+array.unshift('a')  // first add
+array.shift();      // first remove
+
+
+array.splice(0,1)   // remove from 0 to how much items(1 )
+let newarray=array.slice(1);   // remove zero position element
+
+
+
+sorting
+.....................................
+array.sort();
+array.reverse();
+
+
+
+object
+............................................
+
+let obj={
+first:'halo',
+second:'df'
+};
+
+
+if
+..................................
+if(){
+}
+else if(){
+}
+else{
+}
+
+
+
+if , switch ,loop
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
