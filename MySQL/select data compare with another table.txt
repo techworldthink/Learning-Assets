@@ -1,0 +1,1 @@
+$dev_all = "SELECT * FROM pending_alert WHERE pending_alert.id=(SELECT id FROM io_settings WHERE user='$user') ORDER BY ID $order LIMIT $count";
