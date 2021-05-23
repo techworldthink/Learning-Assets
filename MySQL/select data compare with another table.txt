@@ -1,1 +1,7 @@
 $dev_all = "SELECT * FROM pending_alert WHERE pending_alert.id=(SELECT id FROM io_settings WHERE user='$user') ORDER BY ID $order LIMIT $count";
+
+
+
+When subquery returns more than 1 value, you will have to use IN:
+
+$dev_all = "SELECT name,user FROM user_details WHERE user IN(SELECT user_id FROM user_login WHERE user_athorization='0110')";
